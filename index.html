@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suntharam Travels</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="overall">
+    <div id ="form">
+    <h1>Sundaram Travels <br> Booking</h1><br>
+        <label>Enter Your Bus name :</label><br>
+        <input type="text" id="name"><br><br>
+        <label>Enter Your Age :</label><br>
+        <input type="number" id="age"><br><br>
+        <label for="route">Enter bus Route :</label><br>
+        <select id="route">
+            <option value="">- Select Route -</option>
+            <option value="Trichy to palakad">Trichy to palakad</option>
+            <option value="Trichy to Madurai">Trichy to Madurai</option>
+            <option value="">Trichy to Chennai</option>
+            <option value="">Trichy to Kodaikanal</option>
+            <option value="">Trichy to Karur</option>
+            <option value="">Trichy to Pudukottai</option>
+            <option value="">Trichy to Kovai</option>
+            <option value="">Trichy to Nellai</option>
+        </select><br><br>
+        <label>Select Seat Type:</label><br>
+        <select name="seat" id="seat">
+            <option value="">- Select bus Type -</option>
+            <option value="Regular Seat(₹ 500)">Regular Seat(₹ 500)</option>
+            <option value="Primium Seat(+₹ 200)">Primium Seat(+₹ 200)</option>
+            <option value="VIP Seat(+₹ 500)">VIP Seat(+₹ 500)</option>
+        </select><br><br>
+        <label> Select Bus Type</label><br>
+        <select name="" id="type">
+            <option value="">- Select bus Type -</option>
+            <option value="AC (+₹100)">AC (+₹100)</option>
+            <option value="Without AC(NILL)">Without AC(NILL)</option>
+        </select><br><br>
+        <label>Enter No of Tickets</label><br>
+        <input type="number" min="1" placeholder="Enter Ticket Quantity" id="tickets"><br><br>
+        <button id="submit" onclick="fun()">Submit</button>
+    </div>
+    <div id="summary">
+        <img src="./bus.png" alt="bus image">
+        <h1>Status</h1>
+        <div id="status">
+            <h3>Booking summary</h3><br>
+            <span>Bus Name -</span><span id="one"></span><br>
+            <span>Bus Route -</span><span id="two"></span><br>
+            <span>Total Price -</span><span id="three"></span>
+        </div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
